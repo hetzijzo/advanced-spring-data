@@ -30,9 +30,6 @@ class AdvancedSpringDataApplicationTests {
     @Autowired
     private JdbcClient jdbcClient;
 
-    private final Faker faker = new Faker();
-    private final JavaObjectTransformer transformer = new JavaObjectTransformer();
-
     @Test
     void doesTablesExist() {
         int nrOfKlanten = jdbcClient.sql("SELECT count(*) FROM KLANT").query(Integer.class).single();
