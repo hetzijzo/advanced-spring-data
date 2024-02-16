@@ -12,6 +12,15 @@ public class Transactie {
     private BigDecimal bedrag;
     private String omschrijving;
 
+    public Transactie(UUID transactieNr, UUID rekeningNr, String iban, String ibanTegenRekening, BigDecimal bedrag, String omschrijving) {
+        this.transactieNr = transactieNr;
+        this.rekeningNr = rekeningNr;
+        this.iban = iban;
+        this.ibanTegenRekening = ibanTegenRekening;
+        this.bedrag = bedrag;
+        this.omschrijving = omschrijving;
+    }
+
     public UUID getTransactieNr() {
         return transactieNr;
     }

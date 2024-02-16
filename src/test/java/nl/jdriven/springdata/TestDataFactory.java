@@ -21,10 +21,10 @@ public class TestDataFactory {
     private final JavaObjectTransformer transformer = new JavaObjectTransformer();
 
     private static final int minKlanten = 10;
-    private static final int maxKlanten = 1000;
-    private static final int minRekeningenPerKlant = 1;
+    private static final int maxKlanten = 10;
+    private static final int minRekeningenPerKlant = 10;
     private static final int maxRekeningenPerKlant = 10;
-    private static final int minTransactiesPerRekening = 100;
+    private static final int minTransactiesPerRekening = 1000;
     private static final int maxTransactiesPerRekening = 1000;
 
     public static TestDataFactory getInstance() {
